@@ -1,11 +1,14 @@
-#!/bin/bash
+#!/bin/sh
+#
 #This script will automatically Shutdown and Re-boot the system by RTC.
+#
 
 ########################################################################################
 # The looping script
 TESTDEC="关机测试"
+
 # Log file 
-LOG_FILE=/var/tmp/Shutdown_loop_message.log
+LOG_FILE=$LOOPTEST_DIR/Shutdown_loop_message.log
 
 # Looping time file location
 NUM_FILE=/var/tmp/looptime
